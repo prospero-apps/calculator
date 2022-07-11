@@ -32,3 +32,17 @@ function operate(operator, a, b) {
             print('wrong operator');
     }
 }
+
+const numButtons = document.querySelectorAll('button.num');
+const display = document.getElementById('display');
+let displayValue;
+
+numButtons.forEach(button => {
+    button.addEventListener('click', (e) => { 
+        if(display.textContent == '0') display.textContent = '';
+        display.textContent += e.target.textContent;
+        displayValue = display.textContent;
+    })    
+})
+
+
