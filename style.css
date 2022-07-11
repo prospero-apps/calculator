@@ -48,3 +48,11 @@ button.num {
 button.func {
     background-color: gray;
 }
+
+button.clear {
+    background-color: red;
+}
+
+button.equals {
+    background-color: green;
+}
